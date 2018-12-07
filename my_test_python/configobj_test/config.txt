@@ -1,0 +1,100 @@
+#Base station IDs = BS numbers
+BS_IDS = 1, 2
+
+#each bs has one frequence, in Hz
+BS_FREQS = 22000, 22500
+
+BS_INGROUP_ADDRS = 1, 33
+
+#Base station locations in global space: x1,y1,z1,x2,y2,z2...£¬ in mm
+BS_LOCATIONS = 0, 0, 280, 0, 0, 280 # 421 #221.1 # 392.4-28.6 #358.5 #348.5
+
+#start angles of shades, one for each BS
+BS_START_ANGLES =  0, 0
+
+#bs orientations (yaw, pitch roll)
+BS_ORIENTATIONS = 0, 0, 0, 0, 0, 0
+
+#radius of the shad
+SHADE_RADIUS = 6.0
+
+#number of sync points per cycle
+NSYNC_PER_CYCLE = 4
+
+TRAILING_SECTION = 0.125
+
+
+#############################################
+
+#sensor sampling rate
+SENSOR_SAMPLE_RATE = 400000
+
+#usb data channels. 1 means open, 0 closed.
+#the ones must be consecutive
+SENSOR_CHANNELS = 1,1
+
+#unique receiver ID
+RECEIVER_ID = 1
+
+#maximum inter-sensor distance in cm
+MAX_SENSOR_DISTANCE = 100 
+
+#Sensor layout: x1,y1,z1,x2,y2,z2..., with respect to receiver center, in mm
+#A very large coordinate (e.g., > 1000) means invalid (or uninstalled) sensor 
+#Two identical sets of coordinates mean the same sensor
+SENSOR_OFFSETS = 17.5,0,0,  -17.5,0,0,  0,0,0,  0,0,0,  0,0,0,  0,0,0,  0,0,0,  0,0,0
+
+#Port of TCP connection
+TCP_LISTEN_PORT = 5000
+
+#IP address of remote monitor
+REMOTE_MONITOR_ADDR = 127.0.0.1
+
+#TCP port of remote monitor
+REMOTE_MONITOR_PORT = 6000
+
+LT_HUB_ADDR = 192.168.0.109 #127.0.0.1 #192.168.0.109 #127.0.0.1 #192.168.0.109 # #192.168.1.113
+
+LOC_ENGINE_ADDR = 192.168.0.109
+
+#optic/imu data publish port, at the hub
+OPTIC_PUB_PORT = 6100
+
+#Location publish port, at the locEngine
+LOCATION_PUB_PORT = 6102
+
+#command data from the server
+CMD_REP_PORT = 6103
+
+#Maximum speed of receiver, in cm/sec
+MAX_RECEIVER_SPEED = 300  #10.8 Km/h
+
+# debug and logging
+FILE_DEBUG_FLAG = 1
+
+DATA_PLAY_MODE = 0
+
+DATA_DIR = ../Data/
+
+DATA_PLAY_FILE = frame.txt
+
+DATA_DUMP_FILE = datadump.txt
+
+FILTER_DEBUG_FILE = filter
+
+# 0:trace, 1: debug, 2:info = 2, 3:warn, 4:err,5:critical,6:off
+LOG_LEVEL = 1
+
+#Disable the serial port if SERIAL_PORT <= 0
+PLC_SERIAL_PORT = 0
+
+PLC_BAUD_RATE = 9600
+
+IMU_SERIAL_PORT = 0  #6
+
+IMU_BAUD_RATE = 9600
+
+ODOM_SERIAL_PORT = 0
+
+ODOM_BAUD_RATE = 9600
+

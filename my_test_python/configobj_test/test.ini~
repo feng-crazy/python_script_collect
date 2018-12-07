@@ -1,0 +1,7 @@
+#[server]
+servername = 192.168.11.1
+serverport = 8000
+ 
+# 这里是注释
+server = localhost
+port = 8000
